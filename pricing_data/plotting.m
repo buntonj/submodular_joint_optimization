@@ -1,0 +1,10 @@
+figure;
+semilogy(dims,avg_mnp_times,'black','linewidth',2);
+hold on;
+semilogy(dims,avg_pgd_times,'red','linewidth',2);
+legend({'Lift + MNP + FNNQP','PGD+FNNQP'});
+title('Average Running Times');
+xlabel('Number of products (n)');
+ylabel('Average running time (s)');
+xlim([dims(1)-1,dims(end)+1]);
+grid on;
